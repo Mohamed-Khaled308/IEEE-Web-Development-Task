@@ -1,0 +1,126 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(253, 246, 223);
+    font-family: 'Source Code Pro', monospace;
+}
+
+.CG-h1{
+    text-align: center;
+    font-size:3.5vw;
+}
+
+#CG-color{
+    font-size:2vw;
+    margin: 40px auto;
+    padding: 10px;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.CG-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.CG-button{
+    background-color: #ddd;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.CG-button:hover{
+    transform: scale(1.1);
+}
+
+.CG-hint-container{
+    background-color: rgb(245, 228, 228);
+    max-width:600px;
+    padding: 40px 20px 20px;
+    margin: 0px auto;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.CG-hint-container.show{
+    opacity: 1;
+    pointer-events: auto;
+    top: calc(50% - 100px);
+    left: calc(50% - 300px);
+}
+@media (max-width: 780px){
+    .CG-hint-container.show{
+        opacity: 1;
+        pointer-events: auto;
+        top: calc(50% - 100px);
+        left: calc(50% - 215px);
+    }
+}
+#exit-button{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 50px;
+    border: none;
+    background-color: rgb(245, 228, 228);
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+#exit-button:hover{
+    background-color: red;
+    color: white;
+}
+
+#CG-hint{
+    border: 2px solid black;
+    background-color:whitesmoke;
+    display: block;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Source Code Pro', monospace;
+    margin: 10px auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#CG-hint:hover,.CG-replay:hover,.CG-home:hover{
+    background-color: #eee;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.opacity{
+    opacity: 0.01;
+    pointer-events: none;
+}
+
+.CG-buttons {
+    height: 200px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.CG-replay,.CG-home{
+    border: 2px solid black;
+    background-color:whitesmoke;
+    display: block;
+    width: fit-content;
+    height: 30px;
+    padding: 5px;
+    margin-left:15px ;
+    border-radius: 5px;
+    font-family: 'Source Code Pro', monospace;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
