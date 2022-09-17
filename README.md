@@ -1,2 +1,2 @@
-# ieee-task
-it's a web task made by me and 2 of my intelligent friends. it's a web page contains 2 games: guess the color game and prs game
+# IEEE-Web-Task
+it's a web page made by me and 2 of my friends. it contains 2 games: guess the colour game and paper rock scissors game.
